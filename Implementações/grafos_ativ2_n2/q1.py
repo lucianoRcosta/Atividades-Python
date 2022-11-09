@@ -1,6 +1,6 @@
 '''
 Matriz de adjacência 
-Eu escolhi a matriz da dois, mas n dirigida
+Eu escolhi o grafo da dois, mas n dirigido
 '''
 
 grafo = [
@@ -15,25 +15,15 @@ n = 5
 
 lista_adj = []
 
+a = 0
 for i in range(n):
     lista_aux = []
     for j in range(n):
-        if grafo[i][j] == 1 and i == 0:
-            lista_aux.append(j + 1)
-
-        if grafo[i][j] == 1 and i == 1:
-            lista_aux.append(j + 1)
-        
-        if grafo[i][j] == 1 and i == 2:
-            lista_aux.append(j + 1)
-        
-        if grafo[i][j] == 1 and i == 3:
-            lista_aux.append(j + 1)
-        
-        if grafo[i][j] == 1 and i == 4:
+        if grafo[i][j] == 1 and i == a:
             lista_aux.append(j + 1)
         
     lista_adj.append(lista_aux)
+    a += 1
 
 cont = 0
 for l in lista_adj:
