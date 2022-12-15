@@ -12,7 +12,7 @@ def grafo_ciclo(N, grafo):
     for i in range(N):
         lista_aux = []
         for j in range(N):
-            if grafo2[i][j] == 1 and i == cont_linha:
+            if grafo[i][j] == 1 and i == cont_linha:
                 lista_aux.append(j + 1)
                 aux += 1
             
@@ -66,8 +66,18 @@ grafo2 = [
 [1,0,0,0,1,0]  # nó 6
 ]
 
+
+grafo3 = [
+    [0,1,0,1],
+    [1,0,1,0],
+    [0,1,0,1],
+    [1,0,1,0],
+    ]
+
 n1 = 5
 n2 = 6
+n3 = 4
 
 grafo_ciclo(n1, grafo1)
 grafo_ciclo(n2, grafo2)
+grafo_ciclo(n3, grafo3)
