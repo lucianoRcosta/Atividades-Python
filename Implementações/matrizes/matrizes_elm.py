@@ -1,7 +1,7 @@
 import numpy as np
 
 # Suponha que H, H' e y sejam matrizes NumPy
-H = np.array([[0.832, 1.033], [1.033, 1.000]])
+H = np.array([[0.924, 0.880], [0.750, 0.005]])
 y = np.array([0, 1])
 
 # Calcule H'
